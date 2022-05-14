@@ -1,0 +1,18 @@
+# Caches
+.cache
+.DS_Store
+.parcel-cache
+
+# Bundles/packages
+node_modules
+dist
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.toml.d.ts
+pkg/
+wasm-pack.log
+
+# Trunk
+.trunk/*out

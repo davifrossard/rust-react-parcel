@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "matklad.rust-analyzer",
+    "serayuzgur.crates",
+    "bradlc.vscode-tailwindcss",
+    "bungcip.better-toml",
+    "trunk.io",
+    "dtsvet.vscode-wasm"
+  ]
+}

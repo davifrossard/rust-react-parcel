@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    100
+  ],
+  "editor.defaultFormatter": "trunk.io",
+  "editor.formatOnSave": true,
+  "rust-client.engine": "rust-analyzer",
+  "rust-client.updateOnStartup": false,
+}

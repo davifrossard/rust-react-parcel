@@ -1,0 +1,49 @@
+{
+  "name": "react-rust-parcel",
+  "version": "1.0.0",
+  "description": "Template of using React + Parcel + Rust (WASM)",
+  "scripts": {
+    "build:js": "parcel build public/index.html",
+    "build:rs": "wasm-pack build --target web",
+    "start:js": "parcel public/index.html",
+    "start:rs": "cargo watch -w rust -s 'yarn build:rs'",
+    "start": "yarn start:js & yarn start:rs"
+  },
+  "keywords": [
+    "react",
+    "rust",
+    "wasm",
+    "parcel",
+    "tailwindcss"
+  ],
+  "author": "davifrossard",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.5.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.29.4",
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
+    "rimraf": "^3.0.2",
+    "sass": "^1.23.3",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "resolutions": {
+    "**/react-scripts/**/@typescript-eslint/eslint-plugin": "^4.4.1",
+    "**/react-scripts/**/@typescript-eslint/parser": "^4.4.1"
+  },
+  "alias": {
+    "@rustlib": "./pkg"
+  }
+}
